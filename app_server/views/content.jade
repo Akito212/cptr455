@@ -1,0 +1,24 @@
+extends layout
+
+ block content
+    doctype html
+    html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title  My Portfolio 
+    body
+        h1 Akito Fujisawa 
+        h2 Akito Fujisawa 
+        h3 Akito Fujisawa 
+        |            h2 {align="left" style="background-color:DodgerBlue;"}
+        |            h3 {align="right" style="background-color:DodgerBlue;"}
+        h2 my profile 
+        |       my name is akito fujisawa. Computer siecnce major.
+        a(href='resume.pdf' download='resumr.pdf') resume.pdf
+        form(action='/action_page.php')
+        p
+            label(for='feedback') user feedback  
+            textarea#feedback(name='feedback')
+            br
+        input(type='submit' value='Submit')
+        a(href='file:///C:/Users/akito.fujisawa/Documents/VS%20code/cptr455hw1/hw1-onlineShopping.html') online shopping
